@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/totalSoalPangkat"
+        android:layout_margin="16dp"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Soal n/20"/>
+
+    <ImageView
+        android:id="@+id/imgAsButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="90dp"
+
+        android:src="@mipmap/ic_launcher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/entireQuestionForce"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_marginTop="24dp"
+        android:layout_below="@id/imgAsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:textSize="24sp"
+            android:id="@+id/clueForce"
+            android:text="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/answerForce"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:layout_toRightOf="@id/clueForce"
+            android:text="?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/questionForce"
+            android:textSize="24sp"
+            android:text=" = 4"
+            android:layout_toRightOf="@id/answerForce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:visibility="invisible"
+            android:id="@+id/btn_checkForce"
+            android:src="@drawable/ic_check"
+            android:layout_marginTop="16dp"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/entireQuestionForce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+</RelativeLayout>
